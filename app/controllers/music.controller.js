@@ -1,4 +1,4 @@
-const Music = require('../models/music.model');
+const Music = require('../models/playlist.model');
 
 exports.create = (req, res) => {
   const { title, artist1, artist2, url } = req.body;
