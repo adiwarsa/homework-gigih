@@ -1,0 +1,34 @@
+### Create a new music record
+POST http://localhost:8000/api/music
+Content-Type: application/json
+
+{
+  "title": "Lagu Baru 3",
+  "artist1": "Testarataktum",
+  "artist2": "TEst 3",
+  "count" : 0,
+  "url": "https://kubirocho.com/song"
+}
+
+### Get all music records
+GET http://localhost:8000/api/music
+
+### Get mostplayed
+GET http://localhost:8000/api/music/most-played
+
+### Get a specific music record by ID
+GET http://localhost:8000/api/music/l775w9d99glnrieb8p25
+
+### Update a specific music record by ID
+PUT http://localhost:8000/api/music/61gp4q9rs4rf9upqxuwdjl
+Content-Type: application/json
+
+{
+  "title": "Lagu Baru 2",
+  "artist1": "Testarataktum 2",
+  "artist2": "Test 2",
+  "url": "https://example.com/updated-song"
+}
+
+### Delete a specific music record by ID
+DELETE http://localhost:8000/api/music/61gp4q9rs4rf9upqxuwdjl
